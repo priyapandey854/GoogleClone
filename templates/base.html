@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            /* background-color: #0e0e0e; */
+            text-align: center;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
+
+        }
+
+        #signinform {
+            /* display: none; */
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 20px auto 0px auto;
+            border-radius: 8px;
+            border-color: #f9f9f9;
+
+        }
+
+        input {
+            display: block;
+            width: 90%;
+            padding: 8px;
+            margin: 10px auto;
+            border: 1px solid #aaa;
+
+        }
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: none;
+            background-color: #007bff;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+     <div id="signinform">
+            <h2>Sign in</h2>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="password" required>
+            <!-- <input class="me" type="checkbox"> Remember me <br> -->
+            <button type="submit" name="signin">sign in</button><br>
+            <!-- <button type="submit" name="google" >Sign in with Google</button><br>
+        <a href="#">Forgotten your password</a> -->
+        </div>
+        <script>
+            function toggleForm() {
+                let form = document.getElementById("signinform");
+                if (form.style.display === "none") {
+                    form.style.display = "block";
+                } else {
+                    form.style.display = "none";
+                }
+            }
+        </script>
+</body>
+</html>

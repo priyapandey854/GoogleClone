@@ -8,7 +8,6 @@
     <title>Google - Clone</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
-
 <body>
     <header>
         <nav class="topbar">
@@ -19,7 +18,7 @@
             <div class="right-bar">
                 <a href="#">Gmail</a>
                 <a href="#">Images</a>
-                <button class="Signin">Sign in</button>
+                <button onclick="toggleForm()"> <a href="base/">Sign in </a></button>
             </div>
         </nav>
     </header>
@@ -57,18 +56,19 @@
         </form>
     </main>
     <footer class="footer">
-        <div class="india" >India</div><hr>
+        <div class="india">India</div>
+        <hr>
         <div class="footer-bar">
-        <div class="left">
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">How Search word</a>
-        </div>
-        <div class="right">
-            <a href="#">Privacy</a>
-            <a href="#">Teams</a>
-            <a href="#">Settings</a>
-        </div>
+            <div class="left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search word</a>
+            </div>
+            <div class="right">
+                <a href="#">Privacy</a>
+                <a href="#">Teams</a>
+                <a href="#">Settings</a>
+            </div>
         </div>
     </footer>
 </body>
